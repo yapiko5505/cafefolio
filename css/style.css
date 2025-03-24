@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "sans-serif";
+    line-height: 1.7;
+    color: #691c0d;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* header */
+
+.logo {
+    width: 210px;
+    /* margin-top: 10px; */
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 36px;
+    margin-top: 40px;
+}
+
+.main-nav a {
+    color: #691c0d;
+}
+
+.main-nav a:hover {
+    color: #ff2599;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* footer */
+
+footer {
+    background: #691c0d;
+    text-align: center;
+    padding: 26px 0;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+/* home */
+
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+
+/* 見出し */
+
+.page-title {
+    font-size: 5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+}
+
+/* ボタン */
+
+.button {
+    font-size: 1.375rem;
+    background: #f0821e;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+
+.button:hover {
+    background: #ff2599;
+}
+
+/* 大きな背景画像 */
+
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#home {
+    background-image: url(../images/coffeecover2.jpeg),linear-gradient(#b9d0b1, #e1c0b6);
+    background-blend-mode: screen;
+    min-height: 100vh;
+}
+
+#home .page-title {
+    text-transform: none;
+}
+
+/* concept */
+
+#concept {
+    background-image: url(../images/caferoom.jpg),linear-gradient(#b9d0b1, #e1c0b6);
+    background-blend-mode: screen;
+    height: 500px;
+    margin-bottom: 40px;
+}
+
+#concept .page-title {
+    text-align: center;
+}
+
+/* article */
+
+article img {
+    max-width: 80%;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+article p {
+    margin-bottom: 1rem;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/* menu */
+#menu {
+    background-image: url(../images/coffeecover3.jpg),linear-gradient(#b9d0b1, #e1c0b6);
+    background-blend-mode: screen;
+    height: 800px;
+    margin-bottom: 40px;
+}
+
+#menu .page-title {
+    text-align: center;
+}
+
+#menu p {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+
+.grid img {
+    width: 70%;
+}
+
+/* information */
+
+#information {
+    background-image: url(../images/aki4.JPG),linear-gradient(#b9d0b1, #e1c0b6);
+    background-blend-mode: screen;
+    height: 500px;
+    margin-bottom: 40px;
+}
+
+#information .page-title {
+    text-align: center;
+}
+
+/* location */
+
+#location {
+    padding: 4% 0;
+}
+
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location-info {
+    width: 22%;
+}
+
+.location-info p {
+    padding: 12px 10px;
+}
+
+.location-map {
+    width: 74%;
+}
+
+/* sns */
+
+#sns {
+    padding: 4% 0;
+}
+
+#sns .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sns .sub-title {
+    margin-bottom: 30px;
+}
+
+.sns-box {
+    width: 30%;
+}
+
+/* mobile */
+
+@media (max-width: 600px) {
+
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    /* header */
+
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .main-nav li {
+        margin: 0 20px;
+    }
+
+    /* home */
+
+    .home-content {
+        margin-top: 20%;
+    }
+
+    /* concept */
+
+    article {
+        max-width: 100%;
+    }
+
+    #concept .page-title {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    article img {
+        margin-left: 50px;
+    }
+
+    
+    #menu .page-title {
+        margin-top: 50px;
+    }
+
+    /*contact location sns */
+
+    #location .wrapper,
+    #sns .wrapper {
+        flex-direction: column;
+    }
+    
+    .contact
+    .location-info,
+    .location-map,
+    .sns-box {
+        width: 100%;
+    }
+
+    .contact {
+        margin-left: 50px;
+    }
+
+    .location-info p {
+        font-size: 1rem;
+    }
+
+
+    .sns-box {
+        margin-bottom: 30px;
+    }
+    
+}
+
